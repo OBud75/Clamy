@@ -1,0 +1,8 @@
+1- mkdir /home/rowliffe/admin_linux2/Linux_B2/Admin_Linux2/Examen/shared
+2- sudo chown Toto:Toto /home/rowliffe/admin_linux2/Linux_B2/Admin_Linux2/Examen/shared
+3- echo "echo toto" > /home/rowliffe/admin_linux2/Linux_B2/Admin_Linux2/Examen/shared/owned_by_toto.txt
+4- sudo chown Toto:Toto /home/rowliffe/admin_linux2/Linux_B2/Admin_Linux2/Examen/shared/owned_by_toto.txt
+5- nano owned_by_toto.txt 
+6- sudo chmod +x /home/rowliffe/admin_linux2/Linux_B2/Admin_Linux2/Examen/shared/owned_by_toto.txt
+7- Cela permet de donner le droit d'exécution au groupe auquel appartient le fichier.
+8- Cela change le propriétaire du groupe ici root maintenant le ficheir appartient au groupe root.

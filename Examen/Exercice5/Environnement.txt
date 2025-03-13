@@ -1,0 +1,23 @@
+1- mkdir environ
+2- nano script.sh
+   bash script.sh
+3- cd environ
+   python3 -m venv pythonvenv
+   source pythonvenv/bin/activate
+   pythonvenv\Scripts\activate
+   pip install flask
+   pip freeze > requirements.txt
+4- La commande pip freeze > requirements.txt sert a mettre toutes les versions et paquets de Ptyhon dasn un fichier requirements.txt ce qui
+   permmettra au prochain développer de ce mettre dans les mêmes conditions que l'ancien
+5- .gitignore
+   "pythonvenv/"
+6- cela permet de ne pas faire sur le dossier pythonvenv sur notre GIT
+7- On peut mettre dans le fichier .gitignore les fichirs qui se termnient en .sqlite3 ils ne sont pas nécessaire a voir c'est de la base
+   de donné
+8- La commande apt update permet de mettre à jour les paquets depuis les dépôts et la commande apt upgrade permet de mettre à jour les 
+   paquets installés cette fois-ci disponnible dans le dépôt
+9-  La commande apt autoclean permet de supprimer les fichiers .deb des paquets qui ne sont plus nécessaires ou qui ne sont plus
+    installés. La commande apt clean permet de supprimer les fichiers .deb dans le cache des paquets. La commande apt autoremove
+    cette commande supprime les paquets installés automatiquement qui ne sont plus nécessaires. Et pour finir la commande apt purge permet
+    de supprimer un paquet avec tosu ses fichiers de configuration 
+

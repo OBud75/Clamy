@@ -1,0 +1,6 @@
+1- Linux est le noyau interne du système d'exploitation tandis que GNU est un système d'exploitation complet qui utilise le noyau de Linux
+
+2- L'inventaire de Linux est Linus Benedict Torvalds, en plus d'avoir créer Linux il a aussi créer un autre célèbre programme qui s'appel Git.
+
+
+

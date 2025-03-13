@@ -1,0 +1,14 @@
+1- mkdir commandes
+2- nano too_long.sh
+   bash too_long.sh
+3- head -n 5 too_long.txt
+4- tail -n 7 too_long.txt
+5- sort -t ' ' -k2 -n too_long.txt | tail -n 3
+6- grep "Ligne 42" too_long.txt
+7- sed -i 's/Ligne 42/The Ultimate Question of Life, the Universe and Everything/' too_long.txt
+8- nano script.sh
+   bash script.sh test
+9- La différence entre if/else et switch est que if/else permet d'avoir 2 chemin de code en fonction d'une expression booléenne alors que 
+   switch permet d'avoir une variable est après une lsite d'instruction à exécuter
+10- bash script.sh test hello
+    bash script.sh test examen 

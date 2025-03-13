@@ -1,0 +1,18 @@
+1- DEBUG : Utilisé pour les informations de débogage détaillées. Ce niveau est principalement destiné aux développeurs pour diagnostiquer
+   les problèmes.
+   INFO : Utilisé pour les informations générales concernant le fonctionnement normal d'une application ou d'un service.
+   NOTICE : Signale une situation normale mais importante. Moins fréquent que INFO.
+   WARNING : Indique un avertissement sur un événement qui pourrait potentiellement causer des problèmes mais ne nécessite pas immédiatement
+   d'action.
+   ERROR : Signale une erreur qui a affecté une partie de l'application ou du service. Les erreurs sont souvent dues à des événements qui
+   nécessitent une intervention.
+   CRITICAL : Un problème critique qui pourrait entraîner l'arrêt d'une application ou d'un service.
+   ALERT : Un problème urgent nécessitant une action immédiate. Par exemple, une panne système majeure.
+   EMERGENCY : Le niveau le plus élevé, indiquant que le système est inutilisable. Il est utilisé pour signaler des défaillances graves
+   nécessitant une attention immédiate.
+2- nano log_user.sh
+   bash log_user.sh // ./log_user.sh
+3- sudo nano /etc/systemd/journald.conf
+   SystemMaxUse=200M
+4- sudo nano /etc/logrotate.d/nginx
+5- 

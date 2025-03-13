@@ -1,0 +1,15 @@
+1- cat /etc/passwd
+2- sudo useradd Toto
+3- groups Toto
+4- sudo groupadd shared
+   sudo usermod -aG shared rowliffe
+   sudo usermod -aG shared Toto
+5- La commande sudo permet d'élèver ses privilèges en super admin ce qui permet d'exécuter certaine commandes
+6- Non, il faut que l'utilisateur soit dans le groupe sudo ou qu'il soit mis dans le fichier sudoers
+7- sudo visudo
+   Toto ALL=(ALL) NOPASSWD: /usr/bin/apt install
+8- Toto ALL=(ALL) NOPASSWD: ALL
+9- Il existe plusieurs raisons la première pour la sécurité pour éviter de faire des erreurs qui nous serait fatal et la deuxième
+   c'est pour les audits cela permet de tracer et de voir tous ce que fait les utilisateurs.
+10- sudo nano /home/Toto/.bashrc
+    echo "Bienvenue Toto"

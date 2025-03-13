@@ -1,0 +1,5 @@
+1- sudo systemctl daemon-reload
+2- sudo systemctl start nginx
+   sudo systemctl stop nginx
+3- La différence entre start et restart est que start permet de lancer un service qui n'était pas en fonctionnement alors que restart
+   permet de lancer un service qui a déjà fonctionner auparavant ou pas. 

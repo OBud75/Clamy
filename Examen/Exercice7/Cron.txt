@@ -1,0 +1,6 @@
+1- crontab -l
+2- sudo crontab -u Toto -e
+   30 1 * * 3 /chemin/vers/le/script/owned_by_toto
+3- Le dossier cron.weekly est un dossier sui contient tous les scripts à exécuter pour la semaine tandis que le dossier cron.hourly
+   contient tous les scripts à exécuter une fois par heure et enfin le dossier cron.monthly contient tous les scripts à 
+   exécuter une fois par mois. Dans tous les dossier on peut mettre aussi des tâches à faire.

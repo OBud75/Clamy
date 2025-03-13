@@ -1,0 +1,13 @@
+1- mkdir assets
+2- touch img_{1..10}.png
+3- echo "Hello world" > du_texte.txt
+4- rename 's/\.png$/.jpeg/' *.png
+5- mkdir medias 
+   mv *.jpeg medias
+6- Le format .png esd principalement utilisé pour des images numériques, le format .txt est comme son nom l'indique un fichier texte qui
+   n'utilise pas de mise en forme et pour finir le format jpeg qui est utilisé pour les images photographiques qui sont principalement
+   utilisées dans le web.
+7- nano script.sh 
+   bash script.sh
+8- Elle permet d'indiquer qu'il sagit d'un script bash
+  
