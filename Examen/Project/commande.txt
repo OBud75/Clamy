@@ -1,0 +1,11 @@
+1. Utilisation de Flask pour une Application
+
+   virtualenv -p python3 .venv
+   source .venv/bin/activate
+   pip install Flask
+   flask run
+
+2. Utilisation de Flask pour une application avec AWS pour l'hébergement
+
+   sudo service ngix start
+   

@@ -9,3 +9,7 @@ def welcome() :
 @app.route('/bonjour/<string:name>')
 def bonjour(name : str) : 
     return render_template('bonjour.html',name = name)
+
+@app.route('/voyage')
+def voyage() :
+    return render_template('voyage.html')
