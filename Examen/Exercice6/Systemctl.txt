@@ -3,3 +3,7 @@
    sudo systemctl stop nginx
 3- La différence entre start et restart est que start permet de lancer un service qui n'était pas en fonctionnement alors que restart
    permet de lancer un service qui a déjà fonctionner auparavant ou pas. 
+
+# Du coup on utilisera restart surtout dans les cas où on veut simplement prendre en compte des modifications de configuration.
+# A noter que restart de stop pas complètement le process, cela peut avoir une grosse importance, par exemple pour un service
+# de gestion de base de données tel que Postgres, stop + start créera une nouvelle connection à la base et pas restart. 
