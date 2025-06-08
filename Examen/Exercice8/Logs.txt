@@ -14,5 +14,9 @@
    bash log_user.sh // ./log_user.sh
 3- sudo nano /etc/systemd/journald.conf
    SystemMaxUse=200M
+
+# Il est possible de simplifier la manipulation du fichier avec
+# sudo systemctl edit systemd-journald
+
 4- sudo nano /etc/logrotate.d/nginx
 5- 
