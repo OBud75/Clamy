@@ -2,11 +2,33 @@
 2- touch img_{1..10}.png
 3- echo "Hello world" > du_texte.txt
 4- rename 's/\.png$/.jpeg/' *.png
+
+# Sans utiliser rename si on ne veut pas l'installer juste pour ca:
+
+n=1;
+for file in *.png; do
+   mv "$file" "img_${n}.jpeg";
+   ((n++));
+done
+
+# Etant donné que l'index ne change pas, on peut aussi ne changer que l'ext
+for file in *.png; do
+    mv "$file" "${file%.png}.jpeg"
+done
+
 5- mkdir medias 
    mv *.jpeg medias
 6- Le format .png esd principalement utilisé pour des images numériques, le format .txt est comme son nom l'indique un fichier texte qui
    n'utilise pas de mise en forme et pour finir le format jpeg qui est utilisé pour les images photographiques qui sont principalement
    utilisées dans le web.
+
+# Sur Linux c'est surtout l'en tête du fichier qui sert à cela. L'ext est une "aide" pour l'utilisateur plus que pour l'ordinateur
+# Dans le sens où Linux ne va pas regarder l'ext pour décider avec quel programme il doit ouvrir le fichier (contrairement à Windows)
+# Par contre dans certains cas cela aide le programme lancé pour lire le fichier
+# Un bon exemple est la manière dont certaines applications graphiques ou multimédias sous Linux se comportent :
+# Si on essaiee d’ouvrir un fichier .jpg avec un éditeur de texte comme nano, il ne prendra pas en compte l’extension et affichera du texte illisible.
+# Par contre, si on le renomme en .txt et qu'on tente de l’ouvrir avec "Eye of GNOME" (visionneuse d'images), il refusera de le charger.
+
 7- nano script.sh 
    bash script.sh
 8- Elle permet d'indiquer qu'il sagit d'un script bash
