@@ -10,5 +10,12 @@
    bash script.sh test
 9- La différence entre if/else et switch est que if/else permet d'avoir 2 chemin de code en fonction d'une expression booléenne alors que 
    switch permet d'avoir une variable est après une lsite d'instruction à exécuter
+
+Un if/else va parcourir les possibilités de manière linéaire, de la 1ere possibilité à la dernière, dans l'ordre.
+La où un switch va se comporter comme une hash table / dictionnaire
+Dans la pratique, si toutes les possibilités ont autant de chance de se produire, on préfèrera un switch
+Alors que si on sait que a va arriver plus souvent que b qui va arriver plus souvent que c on aura tendance à faire
+if a; else if b; else if c;
+
 10- bash script.sh test hello
     bash script.sh test examen 
