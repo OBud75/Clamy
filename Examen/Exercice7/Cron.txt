@@ -4,3 +4,8 @@
 3- Le dossier cron.weekly est un dossier sui contient tous les scripts à exécuter pour la semaine tandis que le dossier cron.hourly
    contient tous les scripts à exécuter une fois par heure et enfin le dossier cron.monthly contient tous les scripts à 
    exécuter une fois par mois. Dans tous les dossier on peut mettre aussi des tâches à faire.
+
+# Il existe quelques spécificités : 
+# Dans la logique, les taches .weekly, hourly, monthly sont le plus souvent effectuées par le système (souvent par root).
+# Alors que les autres sont souvent executées par un utilisateur (postgres, nginx, un humain etc).
+# Dernier détail : sur certaines distributions, les taches liées à un utilisateur sont dans /var
